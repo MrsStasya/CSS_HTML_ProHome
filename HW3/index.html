@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cart</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="top__container">
+        <div class="head__navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/Logo.svg" alt="logo">
+                </a>
+                <button><img src="./img/Forma1.png" alt="search"></button>
+            </div>
+            <div class="head__buttons">                          
+                <button class="hidden"><img src="./img/Forma2.png" alt="burger"></button>
+                <button class="hidden"><img src="./img/Forma3.png" alt="profile"></button>
+                <button class="relative hidden"><img src="./img/Forma4.png" alt="cart"></button>
+                <div class="circle">
+                    <span>5</span>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb center">
+            <h2 class="breadcrumb__heading">SHOPPING CART</h2>            
+        </div>     
+    </header>
+    <main>
+        <div class="cart center">
+            <div class="cart__content">
+                <div class="cart-item">
+                    <img class="cart-item__photo" src="./img/card3.png" alt="men1">
+                    <div class="cart-item__content">
+                        <a class="cart-item__link">MANGO  PEOPLE  T-SHIRT</a>
+                        <div class="cart-item__info">
+                            <p class="cart-item__text">Price: <span class="cart-item__text_select">$300</span></p>
+                            <p class="cart-item__text">Color: Red</p>
+                            <p class="cart-item__text">Size: Xl</p>
+                            <p class="cart-item__text cart-item__text_quantity">Quantity: <input class="cart-item__number" type="number" value="2"></p>
+                        </div>
+                        <a class="cart-item__close">
+                            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z" fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>                            
+                        </a>
+                    </div>               
+                </div>
+                <div class="cart-item">
+                    <img class="cart-item__photo" src="./img/card2.png" alt="men1">
+                    <div class="cart-item__content">
+                        <a class="cart-item__link">MANGO  PEOPLE  T-SHIRT</a>
+                        <div class="cart-item__info">
+                            <p class="cart-item__text">Price: <span class="cart-item__text_select">$300</span></p>
+                            <p class="cart-item__text">Color: Red</p>
+                            <p class="cart-item__text">Size: Xl</p>
+                            <p class="cart-item__text cart-item__text_quantity">Quantity: <input class="cart-item__number" type="number" value="2"></p>
+                        </div>
+                        <a class="cart-item__close">
+                            <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z" fill="#575757" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>
+                            
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="cart__delivery">
+                <div class="cart__adress">
+                    <h2 class="cart__heading">SHIPPING ADRESS</h2>
+                    <form action="#" class="cart__form">
+                        <input class="cart__input" type="text" placeholder="Bangladesh">
+                        <input class="cart__input" type="text" placeholder="State">
+                        <input class="cart__input" type="text" placeholder="Postcode / Zip">
+                        <button class="cart__button">GET A QUOTE</button>
+                    </form>
+    
+                </div>
+                <div class="cart__payment">
+                    <h2 class="cart__payment__text">SUB TOTAL     $900</h2>
+                    <h1 class="cart__payment__grandtotal">GRAND TOTAL      <span class="cart__payment__grandtotal_select">$900</span></h1>
+                    <svg class="cart__payment__line" width="275.000000" height="1.000000" viewBox="0 0 275 1" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="Shape 8" d="M0 0L275 0L275 1L0 1L0 0Z" fill="#E2E2E2" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>                    
+                    <button class="cart__payment__button">PROCEED TO CHECKOUT</button>                
+                </div>
+            </div>           
+        </div>  
+        <div class="buttons center">
+            <button class="buttons__left">CLEAR SHOPPING CART</button>
+            <button class="buttons__right">CONTINUE SHOPPING</button>            
+        </div>
+    </main>    
+    <div class="main__bottom">        
+        <div class="footer__subscribe">
+            <div class="footer__blur">
+                <div class="footer__subscribe__info">
+                    <img src="./img/subscphoto.png" alt="woman">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="footer__subsc_subsc">
+                    <div class="footer__subsc_subsc__text">
+                        <h2>SUBSCRIBE </h2>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <div class="footer__subsc__form__btn">
+                        <form action="#">
+                            <input required type="email" placeholder="Enter Your Email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__navbar">
+            <p>© 2022  Brand  All Rights Reserved.</p>
+            <div class="footer__navbar__icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest-p"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
