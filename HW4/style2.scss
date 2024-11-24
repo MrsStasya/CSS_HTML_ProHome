@@ -19,11 +19,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-// .container {
-//   width: 1140px;
-//   margin: 0 auto;
-// }
-
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -150,29 +145,52 @@ body {
   background-color: rgb(241, 109,127);
 }
 
-.cart {
+.registration {
   padding-top: 96px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &__content {
+  &__registration {
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
 
-  &__delivery {
+  &__preference {
+    width: 652px;
+    height: 334px;
     display: flex;
     flex-direction: column;
-    gap: 57px;
+    gap: 22px;  
+    //margin-top: 64px;
+    
+    &_text {
+      color: rgb(0, 0, 0);
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 29px;      
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &_position {
+      display: flex;
+      flex-direction: row;
+      gap: 22px;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 21px;
+    margin-top: 21px;
   }
 
   &__heading {
@@ -201,194 +219,83 @@ body {
     }
   }
 
-  &__button {
-    border: 1px solid rgb(164, 164, 164);
-    padding: 12px 16px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(74, 74, 74);
-    font-style: normal;
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 13px;
-    width: 110px;
-    &:hover {
-      color: white;
-      background-color: #A4A4A4;
-    }
-  }
-
-  &__payment {
+  &__checkbox {  
+    width: 132px;
+    height: 17px; 
+    margin-top: 32px;
+    margin-bottom: 33px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 360px;
-    height: 214px;
-    background: rgb(245, 243, 243);
-    
-    &__text {
-      color: rgb(74, 74, 74);
+    align-content: center;
+    gap: 20px;
+
+    &_gender {
+      display: flex;
+    }
+
+    &_input {
+      box-sizing: border-box;
+      border: 1px solid rgb(164, 164, 164);      
+      width: 17px;
+      height: 17px;    
+      
+    }
+
+    &_label {
+      margin-left: 10px; 
+      color: rgb(0, 0, 0);
       font-style: normal;
       font-size: 11px;
-      font-weight: 400;
-      line-height: 13px;
-      margin-top: 39px;
-      margin-bottom: 12px; 
-      margin-right: 34px;  
-
-    }
-
-    &__grandtotal {
-      font-style: normal;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 19px;
-      color: $colorText;
-      margin-bottom: 21px;  
-      margin-right: 37px;       
-  
-
-      &_select {
-        color: $colorSelect;    
-      }
-    }
-
-    &__line {
-      width: 275px;
-      height: 1px;
-      margin-bottom: 17px;
-      margin-right: 42px;
-    }
-
-    &__button{
-      color: rgb(255, 255, 255);
-      font-style: normal;
-      font-size: 16px;
       font-weight: 300;
-      line-height: 19px;
-      background: rgb(241, 109, 127);
-      border: 1px solid rgb(241, 109, 127);
-      //padding: 16px 42px;      
-      width: 273px;
-      height: 50px;
-      margin-right: 43px;
-      &:hover {
-        color: $colorText;
-        background-color: #A4A4A4;
-      }
+      line-height: 13px;
+      text-align: center;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
     }
-
-  }
-   
-
-}
-
-.cart-item {
-  display: flex;
-  width: 652px;
-  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-
-  &__close {
-    position: absolute;
-    top: 22px;
-    right: 28px;
-    &:hover path {
-      fill: $colorSelect;
-    }
-  }
-
-  &__link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: $colorText;
-    width: 262px;
-    display: block;
-    margin-bottom: 42px;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  &__content {
-    position: relative;
-    background-color: #FFF;
-    padding: 22px 32px;
-    box-sizing: border-box; 
-    width: 100%;   
   }
 
   &__text {
+
+    color: rgb(177, 177, 177);
     font-style: normal;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #575757;   
-
-    &_select {
-      color: $colorSelect;    
-    }
-
-    &_quantity {
-      display: flex;
-      gap: 32px;
-    }
-  }
-
-  &__number {
-    width: 44px;
-    height: 25px;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #656565;
-    text-align: center;
-    border: 1px solid #EAEAEA;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;     
+    width: 359px;
+    height: 32px;
+    margin-top: 16px;  
   }
 }
 
-.buttons {    
-  width: 652px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 73px;
-  margin-bottom: 129px; 
-  
-  
-  &__left {
-    width: 235px;
-    height: 50px;
-    border: 1px solid rgb(164, 164, 164); 
-    background-color: #FFFFFF;
 
+
+.button { 
+  // width: 167px;
+  // height: 50px;
+  margin-top: 39px;
+  margin-bottom: 96px;   
+   
+  &__left {
+    width: 167px;
+    height: 50px;
+    border: 1px solid $colorTextSelect; 
+    background-color: $colorSelect;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 16px 29px; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px; 
      
     &:hover {
       color: $colorText;
-      background-color: $colorSelect;     
+      background-color: #FFFFFF; 
     }   
-  }
-
-  &__right {
-    width: 225px;
-    height: 50px;
-    border: 1px solid rgb(164, 164, 164);   
-    background-color: #FFFFFF;
-    &:hover {
-      color: $colorText;
-      background-color: $colorSelect;
-    }   
-  }
-
- 
+  } 
 }
 
 .main__bottom {
